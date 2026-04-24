@@ -3,139 +3,158 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>NEIZPIRATEX2</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet"/>
+<title>NEIZPIRATEX2 - GogoStream</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet"/>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js"></script>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#080000;--bg2:#100505;--bg3:#180a0a;--accent:#e81c1c;--text:#f2eded;--muted:#7a6666;--border:#2a1010}
-body{background:var(--bg);color:var(--text);font-family:'Rajdhani',sans-serif;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(8,0,0,.95);border-bottom:1px solid var(--border);height:64px;display:flex;align-items:center;padding:0 32px;justify-content:space-between}
-.logo{font-family:'Bebas Neue',cursive;font-size:24px;letter-spacing:3px;color:var(--accent);cursor:pointer}
+:root{--bg:#0b0b0b;--bg2:#161616;--accent:#ffc107;--red:#e91e63;--text:#eee;--border:#222}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Rajdhani',sans-serif;line-height:1.5}
+nav{background:#000;border-bottom:2px solid var(--red);padding:0 20px;height:60px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.logo{font-family:'Bebas Neue',cursive;font-size:28px;color:var(--red);cursor:pointer;letter-spacing:1px}
 .logo span{color:#fff}
-.search-nav{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:6px 12px;display:flex;align-items:center}
-.search-nav input{background:transparent;border:none;outline:none;color:#fff;width:150px}
-main{padding:80px 32px 40px}
-.st{font-family:'Bebas Neue',cursive;font-size:24px;letter-spacing:1px;margin-bottom:20px;display:flex;align-items:center;gap:10px}
-.st::before{content:'';width:3px;height:20px;background:var(--accent)}
-.grid{display:grid;gap:15px;grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
-.card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;overflow:hidden;cursor:pointer;transition:.2s}
-.card:hover{border-color:var(--accent);transform:translateY(-3px)}
-.card img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}
-.card-title{padding:10px;font-size:13px;font-weight:700;height:45px;overflow:hidden}
-.view{display:none}
-.view.on{display:block}
-.player-container{width:100%;max-width:1000px;margin:0 auto;aspect-ratio:16/9;background:#000;position:relative}
+.search-box{background:#222;border:none;padding:8px 15px;color:#fff;border-radius:20px;outline:none;width:200px;font-family:inherit}
+main{padding:20px;max-width:1200px;margin:0 auto}
+.section-title{font-family:'Bebas Neue',cursive;font-size:24px;margin-bottom:20px;color:var(--accent);display:flex;align-items:center;gap:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:20px}
+.card{background:var(--bg2);border-radius:5px;overflow:hidden;cursor:pointer;transition:0.2s;position:relative;border:1px solid var(--border)}
+.card:hover{transform:scale(1.03);border-color:var(--red)}
+.card img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.card-info{padding:10px}
+.card-title{font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card-ep{position:absolute;top:5px;right:5px;background:var(--red);color:#fff;padding:2px 6px;font-size:12px;font-weight:700;border-radius:3px}
+#player-view{display:none}
+.player-wrapper{background:#000;width:100%;aspect-ratio:16/9;margin-bottom:20px}
 video{width:100%;height:100%}
-.ep-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(60px,1fr));gap:5px;margin-top:20px}
-.ep-btn{background:var(--bg3);border:1px solid var(--border);color:#fff;padding:8px;cursor:pointer;border-radius:4px;font-weight:700}
-.ep-btn:hover,.ep-btn.active{background:var(--accent);border-color:var(--accent)}
-.back-btn{background:var(--bg3);color:#fff;border:none;padding:8px 16px;cursor:pointer;margin-bottom:20px;border-radius:4px}
-.spinner{width:40px;height:40px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 1s linear infinite;margin:40px auto}
-@keyframes spin{to{transform:rotate(360deg)}}
+.ep-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(50px,1fr));gap:8px;margin-top:15px}
+.ep-btn{background:var(--bg2);border:1px solid var(--border);color:#fff;padding:10px;cursor:pointer;text-align:center;font-weight:700;border-radius:4px}
+.ep-btn:hover,.ep-btn.active{background:var(--red);border-color:var(--red)}
+.loader{text-align:center;padding:50px;font-size:20px;color:var(--accent)}
+.error{background:rgba(233,30,99,0.1);border:1px solid var(--red);padding:20px;text-align:center;border-radius:5px}
 </style>
 </head>
 <body>
+
 <nav>
-<div class="logo" onclick="showHome()">NEIZ<span>PIRATE</span>X2</div>
-<div class="search-nav"><input type="text" id="searchInput" placeholder="Search..."/></div>
+<div class="logo" onclick="location.reload()">NEIZ<span>PIRATE</span></div>
+<input type="text" class="search-box" id="search" placeholder="Search anime...">
 </nav>
+
 <main>
-<div id="homeView" class="view on">
-<div class="st">Trending Now</div>
-<div id="homeGrid" class="grid"></div>
+<div id="home-view">
+<div class="section-title">✨ Recent Releases</div>
+<div id="recent-grid" class="grid"></div>
 </div>
-<div id="watchView" class="view">
-<button class="back-btn" onclick="showHome()">← Back Home</button>
-<h2 id="animeTitle" style="margin-bottom:15px"></h2>
-<div class="player-container">
+
+<div id="player-view">
+<div id="anime-header" style="margin-bottom:15px">
+<h2 id="p-title"></h2>
+<p id="p-ep" style="color:var(--accent)"></p>
+</div>
+<div class="player-wrapper">
 <video id="video" controls></video>
-<div id="playerStatus" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.8);display:none">Loading stream...</div>
 </div>
-<div id="episodes" class="ep-list"></div>
+<div class="section-title">Episodes</div>
+<div id="ep-list" class="ep-grid"></div>
 </div>
 </main>
+
 <script>
-const CONSUMET = "https://api.consumet.org/anime/gogoanime/";
-const ANILIST = "https://graphql.anilist.co";
-let hls = null;
+const API = "https://api.consumet.org/anime/gogoanime/";
+const hls = new Hls();
 
-async function apiFetch(url, options = {}) {
+async function proxyFetch(url) {
 try {
-const res = await fetch(url, options);
-if (!res.ok) throw new Error();
-return await res.json();
+const r = await fetch(url);
+if(!r.ok) throw new Error();
+return await r.json();
 } catch {
-const proxyUrl = "https://api.allorigins.win/get?url=" + encodeURIComponent(url);
-const res = await fetch(proxyUrl);
-const data = await res.json();
-return typeof data.contents === 'string' ? JSON.parse(data.contents) : data.contents;
+const p = "https://api.allorigins.win/get?url=" + encodeURIComponent(url);
+const r = await fetch(p);
+const j = await r.json();
+return JSON.parse(j.contents);
 }
 }
 
-async function loadHome() {
-const query = `query{Page(perPage:12){media(sort:TRENDING_DESC,type:ANIME){id title{english romaji}coverImage{large}}}}`;
-const data = await apiFetch(ANILIST, {
-method: 'POST',
-headers: {'Content-Type': 'application/json'},
-body: JSON.stringify({query})
-});
-const list = data.data.Page.media;
-document.getElementById('homeGrid').innerHTML = list.map(a => `
-<div class="card" onclick="openAnime('${a.title.english || a.title.romaji}')">
-<img src="${a.coverImage.large}">
-<div class="card-title">${a.title.english || a.title.romaji}</div>
+async function loadRecent() {
+const grid = document.getElementById('recent-grid');
+grid.innerHTML = '<div class="loader">Loading latest episodes...</div>';
+try {
+const data = await proxyFetch(API + "recent-episodes");
+grid.innerHTML = data.results.map(a => `
+<div class="card" onclick="playAnime('${a.id}', '${a.episodeNumber}')">
+<div class="card-ep">EP ${a.episodeNumber}</div>
+<img src="${a.image}">
+<div class="card-info"><div class="card-title">${a.title}</div></div>
+</div>`).join('');
+} catch (e) {
+grid.innerHTML = '<div class="error">Failed to load. Try disabling Ad-Block or use a VPN.</div>';
+}
+}
+
+async function searchAnime(q) {
+document.getElementById('home-view').style.display = 'block';
+document.getElementById('player-view').style.display = 'none';
+const grid = document.getElementById('recent-grid');
+document.querySelector('.section-title').textContent = "Search Results: " + q;
+grid.innerHTML = '<div class="loader">Searching...</div>';
+const data = await proxyFetch(API + encodeURIComponent(q));
+grid.innerHTML = data.results.map(a => `
+<div class="card" onclick="loadDetails('${a.id}')">
+<img src="${a.image}">
+<div class="card-info"><div class="card-title">${a.title}</div></div>
 </div>`).join('');
 }
 
-async function openAnime(title) {
-document.querySelector('.view.on').classList.remove('on');
-document.getElementById('watchView').classList.add('on');
-document.getElementById('animeTitle').textContent = title;
-document.getElementById('episodes').innerHTML = '<div class="spinner"></div>';
-
-const search = await apiFetch(CONSUMET + encodeURIComponent(title));
-const animeId = search.results[0].id;
-const info = await apiFetch(CONSUMET + "info/" + animeId);
-
-document.getElementById('episodes').innerHTML = info.episodes.map(ep => `
-<button class="ep-btn" onclick="playEp('${ep.id}', this)">${ep.number}</button>
-`).join('');
-if(info.episodes.length) playEp(info.episodes[0].id);
+async function loadDetails(id) {
+const info = await proxyFetch(API + "info/" + id);
+showPlayer(info, info.episodes[0].id, 1);
 }
 
-async function playEp(id, btn) {
-document.querySelectorAll('.ep-btn').forEach(b => b.classList.remove('active'));
-if(btn) btn.classList.add('active');
-const status = document.getElementById('playerStatus');
-status.style.display = 'flex';
+async function playAnime(id, epNum) {
+const info = await proxyFetch(API + "info/" + id);
+showPlayer(info, id + "-episode-" + epNum, epNum);
+}
 
-const data = await apiFetch(CONSUMET + "watch/" + id);
-const source = data.sources.find(s => s.quality === 'default' || s.quality === 'backup') || data.sources[0];
+function showPlayer(info, epId, epNum) {
+document.getElementById('home-view').style.display = 'none';
+document.getElementById('player-view').style.display = 'block';
+document.getElementById('p-title').textContent = info.title;
+document.getElementById('p-ep').textContent = "Playing Episode " + epNum;
+
+document.getElementById('ep-list').innerHTML = info.episodes.map(e => `
+<div class="ep-btn ${e.number == epNum ? 'active' : ''}" onclick="switchEp('${info.id}', '${e.id}', '${e.number}')">${e.number}</div>
+`).join('');
+
+loadStream(epId);
+}
+
+async function loadStream(epId) {
+const data = await proxyFetch(API + "watch/" + epId);
+const src = data.sources.find(s => s.quality === 'default' || s.quality === '720p') || data.sources[0];
 const video = document.getElementById('video');
 
 if (Hls.isSupported()) {
-if (hls) hls.destroy();
-hls = new Hls();
-hls.loadSource(source.url);
+hls.loadSource(src.url);
 hls.attachMedia(video);
+hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
 } else {
-video.src = source.url;
-}
+video.src = src.url;
 video.play();
-status.style.display = 'none';
+}
 }
 
-function showHome() {
-document.querySelector('.view.on').classList.remove('on');
-document.getElementById('homeView').classList.add('on');
+function switchEp(animeId, epId, num) {
+document.querySelectorAll('.ep-btn').forEach(b => b.classList.remove('active'));
+document.getElementById('p-ep').textContent = "Playing Episode " + num;
+loadStream(epId);
 }
 
-document.getElementById('searchInput').onkeydown = e => {
-if(e.key === 'Enter') openAnime(e.target.value);
+document.getElementById('search').onkeydown = e => {
+if(e.key === 'Enter') searchAnime(e.target.value);
 };
 
-loadHome();
+loadRecent();
 </script>
 </body>
 </html>
