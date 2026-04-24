@@ -160,151 +160,142 @@ main{padding:0 32px 80px}
 </head>
 <body>
 <nav>
-  <div class="logo" id="logoBtn">NEIZ<span>PIRATE</span>X2</div>
-  <div class="nav-tabs" id="navTabs"></div>
-  <div class="nsearch">
-    <span style="font-size:13px;color:var(--muted)">⌕</span>
-    <input id="navSearchInput" type="text" placeholder="Search anime..."/>
-  </div>
-  <div class="updated-badge" id="updatedBadge"></div>
+<div class="logo" id="logoBtn">NEIZ<span>PIRATE</span>X2</div>
+<div class="nav-tabs" id="navTabs"></div>
+<div class="nsearch">
+<span style="font-size:13px;color:var(--muted)">⌕</span>
+<input id="navSearchInput" type="text" placeholder="Search anime..."/>
+</div>
+<div class="updated-badge" id="updatedBadge"></div>
 </nav>
-
 <div id="homeView" class="view on">
-  <div class="hero" id="heroEl">
-    <img class="hero-bg" id="heroBgImg" src="" alt=""/>
-    <div class="hero-veil"></div>
-    <div class="hero-body">
-      <div class="hero-pill">⚡ Trending Now</div>
-      <div class="hero-title" id="heroTitle">Loading...</div>
-      <div class="hero-meta" id="heroMeta"></div>
-      <div class="hero-desc" id="heroDesc"></div>
-      <div class="btns">
-        <button class="btn-r" id="heroWatchBtn">▶ Watch Now</button>
-        <button class="btn-g" id="heroInfoBtn">ℹ Info</button>
-      </div>
-    </div>
-    <div class="hero-dots" id="heroDots"></div>
-  </div>
-  <main>
-    <div class="two-col">
-      <div>
-        <div class="section">
-          <div class="sh"><div class="st">🔥 Trending</div></div>
-          <div class="grid" id="trendingGrid"><div style="grid-column:1/-1;display:grid;grid-template-columns:repeat(5,1fr);gap:14px"><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div></div></div>
-        </div>
-        <div class="section">
-          <div class="sh"><div class="st">🌸 This Season</div></div>
-          <div class="grid" id="seasonGrid"><div style="grid-column:1/-1;display:grid;grid-template-columns:repeat(5,1fr);gap:14px"><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div></div></div>
-        </div>
-        <div class="section">
-          <div class="sh"><div class="st">⭐ Most Popular</div></div>
-          <div class="grid" id="popularGrid"><div style="grid-column:1/-1;display:grid;grid-template-columns:repeat(5,1fr);gap:14px"><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div></div></div>
-        </div>
-      </div>
-      <div>
-        <div class="section">
-          <div class="sh"><div class="st">🏆 Top Rated</div></div>
-          <div class="rank-list" id="topRatedList"></div>
-        </div>
-        <div class="section" style="margin-top:28px">
-          <div class="sh"><div class="st">📅 Airing Today</div></div>
-          <div class="sched-list" id="schedList"><div class="skeleton" style="height:200px;border-radius:8px"></div></div>
-        </div>
-      </div>
-    </div>
-  </main>
+<div class="hero" id="heroEl">
+<img class="hero-bg" id="heroBgImg" src="" alt=""/>
+<div class="hero-veil"></div>
+<div class="hero-body">
+<div class="hero-pill">⚡ Trending Now</div>
+<div class="hero-title" id="heroTitle">Loading...</div>
+<div class="hero-meta" id="heroMeta"></div>
+<div class="hero-desc" id="heroDesc"></div>
+<div class="btns">
+<button class="btn-r" id="heroWatchBtn">▶ Watch Now</button>
+<button class="btn-g" id="heroInfoBtn">ℹ Info</button>
 </div>
-
+</div>
+<div class="hero-dots" id="heroDots"></div>
+</div>
+<main>
+<div class="two-col">
+<div>
+<div class="section">
+<div class="sh"><div class="st">🔥 Trending</div></div>
+<div class="grid" id="trendingGrid"><div style="grid-column:1/-1;display:grid;grid-template-columns:repeat(5,1fr);gap:14px"><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div></div></div>
+</div>
+<div class="section">
+<div class="sh"><div class="st">🌸 This Season</div></div>
+<div class="grid" id="seasonGrid"><div style="grid-column:1/-1;display:grid;grid-template-columns:repeat(5,1fr);gap:14px"><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div></div></div>
+</div>
+<div class="section">
+<div class="sh"><div class="st">⭐ Most Popular</div></div>
+<div class="grid" id="popularGrid"><div style="grid-column:1/-1;display:grid;grid-template-columns:repeat(5,1fr);gap:14px"><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div></div></div>
+</div>
+</div>
+<div>
+<div class="section">
+<div class="sh"><div class="st">🏆 Top Rated</div></div>
+<div class="rank-list" id="topRatedList"></div>
+</div>
+<div class="section" style="margin-top:28px">
+<div class="sh"><div class="st">📅 Airing Today</div></div>
+<div class="sched-list" id="schedList"><div class="skeleton" style="height:200px;border-radius:8px"></div></div>
+</div>
+</div>
+</div>
+</main>
+</div>
 <div id="searchView" class="view">
-  <div class="search-view">
-    <div class="search-big">
-      <span style="font-size:18px;color:var(--muted)">⌕</span>
-      <input id="searchBigInput" type="text" placeholder="Search for any anime..."/>
-    </div>
-    <div class="filter-bar" id="filterBar">
-      <button class="filter-btn on" data-type="">All</button>
-      <button class="filter-btn" data-type="TV">TV</button>
-      <button class="filter-btn" data-type="MOVIE">Movie</button>
-      <button class="filter-btn" data-type="OVA">OVA</button>
-      <button class="filter-btn" data-type="SPECIAL">Special</button>
-    </div>
-    <div class="search-label" id="searchLabel">Start typing to search...</div>
-    <div class="grid" id="searchGrid"></div>
-  </div>
+<div class="search-view">
+<div class="search-big">
+<span style="font-size:18px;color:var(--muted)">⌕</span>
+<input id="searchBigInput" type="text" placeholder="Search for any anime..."/>
 </div>
-
+<div class="filter-bar" id="filterBar">
+<button class="filter-btn on" data-type="">All</button>
+<button class="filter-btn" data-type="TV">TV</button>
+<button class="filter-btn" data-type="MOVIE">Movie</button>
+<button class="filter-btn" data-type="OVA">OVA</button>
+<button class="filter-btn" data-type="SPECIAL">Special</button>
+</div>
+<div class="search-label" id="searchLabel">Start typing to search...</div>
+<div class="grid" id="searchGrid"></div>
+</div>
+</div>
 <div id="topView" class="view">
-  <main style="padding-top:88px">
-    <div class="sh" style="margin-bottom:18px"><div class="st">🏆 All Time Top Anime</div></div>
-    <div class="grid" id="topAllGrid"></div>
-  </main>
+<main style="padding-top:88px">
+<div class="sh" style="margin-bottom:18px"><div class="st">🏆 All Time Top Anime</div></div>
+<div class="grid" id="topAllGrid"></div>
+</main>
 </div>
-
 <div id="detailView" class="view">
-  <div class="detail-hero">
-    <img class="detail-bg" id="detailBg" src="" alt=""/>
-    <div class="detail-veil"></div>
-    <img class="detail-thumb" id="detailThumb" src="" alt=""/>
-    <div class="detail-meta">
-      <div class="detail-title" id="detailTitle"></div>
-      <div class="detail-tags" id="detailTags"></div>
-    </div>
-  </div>
-  <div class="detail-body">
-    <div style="margin-bottom:20px">
-      <button class="back-btn" onclick="goHome()">← Back</button>
-    </div>
-    <div class="detail-grid">
-      <div>
-        <div class="detail-stats" id="detailStats"></div>
-        <div class="genre-pills" id="detailGenres"></div>
-        <div class="detail-synopsis" id="detailSynopsis"></div>
-        <div id="detailEpisodes"></div>
-      </div>
-      <div id="detailSidebar"></div>
-    </div>
-  </div>
+<div class="detail-hero">
+<img class="detail-bg" id="detailBg" src="" alt=""/>
+<div class="detail-veil"></div>
+<img class="detail-thumb" id="detailThumb" src="" alt=""/>
+<div class="detail-meta">
+<div class="detail-title" id="detailTitle"></div>
+<div class="detail-tags" id="detailTags"></div>
 </div>
-
+</div>
+<div class="detail-body">
+<div style="margin-bottom:20px">
+<button class="back-btn" onclick="goHome()">← Back</button>
+</div>
+<div class="detail-grid">
+<div>
+<div class="detail-stats" id="detailStats"></div>
+<div class="genre-pills" id="detailGenres"></div>
+<div class="detail-synopsis" id="detailSynopsis"></div>
+<div id="detailEpisodes"></div>
+</div>
+<div id="detailSidebar"></div>
+</div>
+</div>
+</div>
 <div id="watchView" class="view">
-  <div class="watch-view">
-    <div style="padding:8px 16px;display:flex;align-items:center;gap:12px;background:var(--bg2);border-bottom:1px solid var(--border)">
-      <button class="back-btn" id="watchBackBtn">← Back</button>
-      <span style="font-size:13px;color:var(--muted)" id="watchBreadcrumb"></span>
-    </div>
-    <div class="watch-grid">
-      <div class="watch-player-side">
-        <div class="player-wrap">
-          <video id="videoPlayer" controls></video>
-          <div class="player-overlay" id="playerOverlay">
-            <div class="spinner"></div>
-            <div class="player-msg" id="playerMsg">Finding stream...</div>
-          </div>
-        </div>
-        <div class="watch-info">
-          <div class="watch-title" id="watchTitle"></div>
-          <div class="watch-ep-label" id="watchEpLabel"></div>
-          <div id="sourcePickerArea"></div>
-        </div>
-      </div>
-      <div class="watch-ep-side">
-        <div class="ep-side-head">
-          <span>Episodes</span>
-          <span style="font-size:11px;color:var(--muted)" id="epSideCount"></span>
-        </div>
-        <div class="ep-side-scroll" id="epSideScroll"></div>
-      </div>
-    </div>
-  </div>
+<div class="watch-view">
+<div style="padding:8px 16px;display:flex;align-items:center;gap:12px;background:var(--bg2);border-bottom:1px solid var(--border)">
+<button class="back-btn" id="watchBackBtn">← Back</button>
+<span style="font-size:13px;color:var(--muted)" id="watchBreadcrumb"></span>
 </div>
-
+<div class="watch-grid">
+<div class="watch-player-side">
+<div class="player-wrap">
+<video id="videoPlayer" controls></video>
+<div class="player-overlay" id="playerOverlay">
+<div class="spinner"></div>
+<div class="player-msg" id="playerMsg">Finding stream...</div>
+</div>
+</div>
+<div class="watch-info">
+<div class="watch-title" id="watchTitle"></div>
+<div class="watch-ep-label" id="watchEpLabel"></div>
+<div id="sourcePickerArea"></div>
+</div>
+</div>
+<div class="watch-ep-side">
+<div class="ep-side-head">
+<span>Episodes</span>
+<span style="font-size:11px;color:var(--muted)" id="epSideCount"></span>
+</div>
+<div class="ep-side-scroll" id="epSideScroll"></div>
+</div>
+</div>
+</div>
+</div>
 <script>
 const ANILIST='https://graphql.anilist.co';
 const JIKAN='https://api.jikan.moe/v4';
-const CONSUMET_HOSTS=[
-  'https://consumet-api.onrender.com',
-  'https://api.consumet.org'
-];
+const CONSUMET_HOSTS=['https://consumet-api.onrender.com','https://api.consumet.org'];
 const REFRESH_MS=30*60*1000;
 const cache={};
 let heroList=[];
@@ -320,591 +311,63 @@ let jikanRunning=false;
 let filterType='';
 let searchDebounce=null;
 let lastUpdated=null;
-
-function jikanEnqueue(fn){
-  return new Promise((res,rej)=>{
-    jikanQueue.push({fn,res,rej});
-    if(!jikanRunning)jikanDrain();
-  });
-}
-async function jikanDrain(){
-  jikanRunning=true;
-  while(jikanQueue.length){
-    const {fn,res,rej}=jikanQueue.shift();
-    try{res(await fn())}catch(e){rej(e)}
-    await sleep(400);
-  }
-  jikanRunning=false;
-}
-
-async function anilistQuery(query,vars={}){
-  const key=JSON.stringify({query,vars});
-  if(cache[key]&&Date.now()-cache[key].t<REFRESH_MS)return cache[key].d;
-  const r=await fetch(ANILIST,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({query,variables:vars})});
-  const d=await r.json();
-  cache[key]={d:d.data,t:Date.now()};
-  return d.data;
-}
-
-async function jikanGet(path){
-  return jikanEnqueue(async()=>{
-    const r=await fetch(JIKAN+path);
-    if(!r.ok)throw new Error('Jikan '+r.status);
-    return r.json();
-  });
-}
-
-async function detectConsumer(){
-  if(activeConsumer)return activeConsumer;
-  for(const h of CONSUMET_HOSTS){
-    try{
-      const r=await fetch(h+'/anime/gogoanime/naruto?page=1',{signal:AbortSignal.timeout(6000)});
-      if(r.ok){activeConsumer=h;return h;}
-    }catch(e){}
-  }
-  return null;
-}
-
-async function consumetSearch(title){
-  const h=await detectConsumer();
-  if(!h)return null;
-  try{
-    const q=encodeURIComponent(title);
-    const r=await fetch(`${h}/anime/gogoanime/${q}`,{signal:AbortSignal.timeout(8000)});
-    if(!r.ok)return null;
-    return r.json();
-  }catch(e){return null;}
-}
-
-async function consumetInfo(id){
-  const h=await detectConsumer();
-  if(!h)return null;
-  try{
-    const r=await fetch(`${h}/anime/gogoanime/info/${encodeURIComponent(id)}`,{signal:AbortSignal.timeout(10000)});
-    if(!r.ok)return null;
-    return r.json();
-  }catch(e){return null;}
-}
-
-async function consumetWatch(epId){
-  const h=await detectConsumer();
-  if(!h)return null;
-  try{
-    const r=await fetch(`${h}/anime/gogoanime/watch/${encodeURIComponent(epId)}`,{signal:AbortSignal.timeout(10000)});
-    if(!r.ok)return null;
-    return r.json();
-  }catch(e){return null;}
-}
-
+function jikanEnqueue(fn){return new Promise((res,rej)=>{jikanQueue.push({fn,res,rej});if(!jikanRunning)jikanDrain();});}
+async function jikanDrain(){jikanRunning=true;while(jikanQueue.length){const {fn,res,rej}=jikanQueue.shift();try{res(await fn())}catch(e){rej(e)}await sleep(400);}jikanRunning=false;}
+async function anilistQuery(query,vars={}){const key=JSON.stringify({query,vars});if(cache[key]&&Date.now()-cache[key].t<REFRESH_MS)return cache[key].d;try{const r=await fetch(ANILIST,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({query,variables:vars})});if(!r.ok)throw new Error(r.status);const d=await r.json();if(d.errors)throw new Error(d.errors[0].message);cache[key]={d:d.data,t:Date.now()};return d.data;}catch(e){throw e;}}
+async function jikanGet(path){return jikanEnqueue(async()=>{const r=await fetch(JIKAN+path);if(!r.ok)throw new Error('Jikan '+r.status);return r.json();});}
+async function detectConsumer(){if(activeConsumer)return activeConsumer;for(const h of CONSUMET_HOSTS){try{const r=await fetch(h+'/anime/gogoanime/naruto?page=1',{signal:AbortSignal.timeout(6000)});if(r.ok){activeConsumer=h;return h;}}catch(e){}}return null;}
+async function consumetSearch(title){const h=await detectConsumer();if(!h)return null;try{const q=encodeURIComponent(title);const r=await fetch(`${h}/anime/gogoanime/${q}`,{signal:AbortSignal.timeout(8000)});if(!r.ok)return null;return r.json();}catch(e){return null;}}
+async function consumetInfo(id){const h=await detectConsumer();if(!h)return null;try{const r=await fetch(`${h}/anime/gogoanime/info/${encodeURIComponent(id)}`,{signal:AbortSignal.timeout(10000)});if(!r.ok)return null;return r.json();}catch(e){return null;}}
+async function consumetWatch(epId){const h=await detectConsumer();if(!h)return null;try{const r=await fetch(`${h}/anime/gogoanime/watch/${encodeURIComponent(epId)}`,{signal:AbortSignal.timeout(10000)});if(!r.ok)return null;return r.json();}catch(e){return null;}}
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
-
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 function fmt(n){if(!n)return'—';return n>=1e6?(n/1e6).toFixed(1)+'M':n>=1e3?(n/1e3).toFixed(0)+'K':n}
 function stripHtml(s){return s?s.replace(/<[^>]*>/g,'').replace(/&[a-z]+;/gi,' ').trim():''}
-
 const AL_FRAGMENT=`id title{romaji english} coverImage{large extraLarge} bannerImage episodes status season seasonYear score:meanScore popularity genres type format`;
-
 const TREND_QUERY=`query($page:Int){Page(page:$page,perPage:20){media(sort:TRENDING_DESC,type:ANIME,status_in:[RELEASING,FINISHED],isAdult:false){${AL_FRAGMENT}}}}`;
 const POP_QUERY=`query($page:Int){Page(page:$page,perPage:16){media(sort:POPULARITY_DESC,type:ANIME,isAdult:false){${AL_FRAGMENT}}}}`;
 const SEASON_QUERY=`query($season:MediaSeason,$year:Int){Page(perPage:16){media(season:$season,seasonYear:$year,type:ANIME,sort:POPULARITY_DESC,isAdult:false){${AL_FRAGMENT}}}}`;
 const TOP_QUERY=`query($page:Int){Page(page:$page,perPage:24){media(sort:SCORE_DESC,type:ANIME,isAdult:false){${AL_FRAGMENT}}}}`;
 const SEARCH_QUERY=`query($q:String,$format:MediaFormat){Page(perPage:24){media(search:$q,type:ANIME,format:$format,isAdult:false,sort:POPULARITY_DESC){${AL_FRAGMENT}}}}`;
 const DETAIL_QUERY=`query($id:Int){Media(id:$id,type:ANIME){${AL_FRAGMENT} description synonyms studios{nodes{name}} startDate{year month day} endDate{year month day} trailer{site id} nextAiringEpisode{episode timeUntilAiring}}}`;
-
-function getSeason(){
-  const m=new Date().getMonth();
-  const seasons=['WINTER','WINTER','SPRING','SPRING','SPRING','SUMMER','SUMMER','SUMMER','FALL','FALL','FALL','WINTER'];
-  return{season:seasons[m],year:new Date().getFullYear()};
-}
-
-function animeCard(a,showSub=true){
-  const img=a.coverImage?.large||a.coverImage?.extraLarge||'';
-  const score=a.score?'★ '+(a.score/10).toFixed(1):'—';
-  const eps=a.episodes?a.episodes+'ep':(a.status==='RELEASING'?'Ongoing':'?');
-  const type=a.format||a.type||'';
-  return `<div class="card" onclick="openDetail(${a.id})">
-    <span class="card-ep">${eps}</span>
-    ${showSub?'<span class="card-sub">SUB</span>':''}
-    ${img?`<img class="card-img" src="${esc(img)}" alt="${esc(a.title?.romaji)}" loading="lazy"/>`:`<div class="card-img" style="display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:32px">🎬</div>`}
-    <div class="card-body">
-      <div class="card-title">${esc(a.title?.english||a.title?.romaji)}</div>
-      <div class="card-foot">
-        <div class="card-score">${score}</div>
-        ${type?`<div class="card-type">${esc(type)}</div>`:''}
-      </div>
-    </div>
-  </div>`;
-}
-
-function rankItem(a,i){
-  const img=a.coverImage?.large||'';
-  const score=a.score?'★ '+(a.score/10).toFixed(1):'—';
-  return `<div class="rank-item" onclick="openDetail(${a.id})">
-    <div class="rank-n">${String(i+1).padStart(2,'0')}</div>
-    ${img?`<img class="rank-img" src="${esc(img)}" alt="" loading="lazy"/>`:`<div class="rank-img"></div>`}
-    <div class="rank-info">
-      <div class="rank-title">${esc(a.title?.english||a.title?.romaji)}</div>
-      <div class="rank-sub"><span>${a.format||'?'}</span><span style="color:var(--gold)">${score}</span></div>
-    </div>
-  </div>`;
-}
-
-function setHero(list){
-  heroList=list.filter(a=>a.bannerImage||a.coverImage?.extraLarge);
-  heroIdx=0;
-  buildHeroDots();
-  renderHero(0);
-  if(heroTimer)clearInterval(heroTimer);
-  heroTimer=setInterval(()=>{heroIdx=(heroIdx+1)%Math.min(heroList.length,8);renderHero(heroIdx);},6000);
-}
-
-function renderHero(i){
-  const a=heroList[i];
-  if(!a)return;
-  const bg=a.bannerImage||a.coverImage?.extraLarge||'';
-  document.getElementById('heroBgImg').src=bg;
-  document.getElementById('heroTitle').textContent=a.title?.english||a.title?.romaji||'';
-  document.getElementById('heroBgImg').style.opacity='0';
-  setTimeout(()=>document.getElementById('heroBgImg').style.opacity='1',50);
-  const score=a.score?'★ '+(a.score/10).toFixed(1):'';
-  document.getElementById('heroMeta').innerHTML=`
-    ${score?`<div class="hero-score">${score}</div>`:''}
-    ${a.seasonYear?`<span class="hero-tag">${a.seasonYear}</span>`:''}
-    ${a.format?`<span class="hero-tag">${a.format}</span>`:''}
-    ${a.episodes?`<span class="hero-tag">${a.episodes} Episodes</span>`:'<span class="hero-tag">Ongoing</span>'}
-    ${a.status==='RELEASING'?`<span class="hero-tag" style="color:var(--accent);border-color:var(--accent)">Airing</span>`:''}
-  `;
-  document.getElementById('heroDesc').textContent='';
-  document.getElementById('heroWatchBtn').onclick=()=>openDetail(a.id);
-  document.getElementById('heroInfoBtn').onclick=()=>openDetail(a.id);
-  document.querySelectorAll('.hero-dot').forEach((d,di)=>d.classList.toggle('on',di===i));
-}
-
-function buildHeroDots(){
-  const ct=document.getElementById('heroDots');
-  ct.innerHTML='';
-  Math.min(heroList.length,8);
-  for(let i=0;i<Math.min(heroList.length,8);i++){
-    const d=document.createElement('button');
-    d.className='hero-dot'+(i===0?' on':'');
-    d.onclick=()=>{heroIdx=i;renderHero(i);};
-    ct.appendChild(d);
-  }
-}
-
+function getSeason(){const m=new Date().getMonth();const seasons=['WINTER','WINTER','SPRING','SPRING','SPRING','SUMMER','SUMMER','SUMMER','FALL','FALL','FALL','WINTER'];return{season:seasons[m],year:new Date().getFullYear()};}
+function animeCard(a,showSub=true){const img=a.coverImage?.large||a.coverImage?.extraLarge||'';const score=a.score?'★ '+(a.score/10).toFixed(1):'—';const eps=a.episodes?a.episodes+'ep':(a.status==='RELEASING'?'Ongoing':'?');const type=a.format||a.type||'';return `<div class="card" onclick="openDetail(${a.id})"><span class="card-ep">${eps}</span>${showSub?'<span class="card-sub">SUB</span>':''}${img?`<img class="card-img" src="${esc(img)}" alt="${esc(a.title?.romaji)}" loading="lazy"/>`:`<div class="card-img" style="display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:32px">🎬</div>`}<div class="card-body"><div class="card-title">${esc(a.title?.english||a.title?.romaji)}</div><div class="card-foot"><div class="card-score">${score}</div>${type?`<div class="card-type">${esc(type)}</div>`:''}</div></div></div>`;}
+function rankItem(a,i){const img=a.coverImage?.large||'';const score=a.score?'★ '+(a.score/10).toFixed(1):'—';return `<div class="rank-item" onclick="openDetail(${a.id})"><div class="rank-n">${String(i+1).padStart(2,'0')}</div>${img?`<img class="rank-img" src="${esc(img)}" alt="" loading="lazy"/>`:`<div class="rank-img"></div>`}<div class="rank-info"><div class="rank-title">${esc(a.title?.english||a.title?.romaji)}</div><div class="rank-sub"><span>${a.format||'?'}</span><span style="color:var(--gold)">${score}</span></div></div></div>`;}
+function setHero(list){heroList=list.filter(a=>a.bannerImage||a.coverImage?.extraLarge);heroIdx=0;buildHeroDots();renderHero(0);if(heroTimer)clearInterval(heroTimer);heroTimer=setInterval(()=>{heroIdx=(heroIdx+1)%Math.min(heroList.length,8);renderHero(heroIdx);},6000);}
+function renderHero(i){const a=heroList[i];if(!a)return;const bg=a.bannerImage||a.coverImage?.extraLarge||'';document.getElementById('heroBgImg').src=bg;document.getElementById('heroTitle').textContent=a.title?.english||a.title?.romaji||'';document.getElementById('heroBgImg').style.opacity='0';setTimeout(()=>document.getElementById('heroBgImg').style.opacity='1',50);const score=a.score?'★ '+(a.score/10).toFixed(1):'';document.getElementById('heroMeta').innerHTML=`${score?`<div class="hero-score">${score}</div>`:''}${a.seasonYear?`<span class="hero-tag">${a.seasonYear}</span>`:''}${a.format?`<span class="hero-tag">${a.format}</span>`:''}${a.episodes?`<span class="hero-tag">${a.episodes} Episodes</span>`:'<span class="hero-tag">Ongoing</span>'}${a.status==='RELEASING'?`<span class="hero-tag" style="color:var(--accent);border-color:var(--accent)">Airing</span>`:''}`;document.getElementById('heroDesc').textContent='';document.getElementById('heroWatchBtn').onclick=()=>openDetail(a.id);document.getElementById('heroInfoBtn').onclick=()=>openDetail(a.id);document.querySelectorAll('.hero-dot').forEach((d,di)=>d.classList.toggle('on',di===i));}
+function buildHeroDots(){const ct=document.getElementById('heroDots');ct.innerHTML='';for(let i=0;i<Math.min(heroList.length,8);i++){const d=document.createElement('button');d.className='hero-dot'+(i===0?' on':'');d.onclick=()=>{heroIdx=i;renderHero(i);};ct.appendChild(d);}}
 const TABS=[{id:'home',label:'Home'},{id:'search',label:'Search'},{id:'top',label:'Top Anime'}];
 let activeTab='home';
-
-function buildNav(){
-  const ct=document.getElementById('navTabs');
-  ct.innerHTML='';
-  TABS.forEach(t=>{
-    const b=document.createElement('button');
-    b.className='ntab'+(t.id==='home'?' on':'');
-    b.textContent=t.label;
-    b.onclick=()=>switchTab(t.id);
-    ct.appendChild(b);
-  });
-}
-
-function switchTab(id){
-  activeTab=id;
-  document.querySelectorAll('.ntab').forEach((b,i)=>b.classList.toggle('on',TABS[i].id===id));
-  showView(id==='home'?'homeView':id==='search'?'searchView':id==='top'?'topView':'homeView');
-  if(id==='search')document.getElementById('searchBigInput').focus();
-  if(id==='top'&&!document.getElementById('topAllGrid').innerHTML)loadTopAll();
-  window.scrollTo(0,0);
-}
-
-function showView(id){
-  ['homeView','searchView','topView','detailView','watchView'].forEach(v=>{
-    const el=document.getElementById(v);
-    if(el)el.className='view'+(v===id?' on':'');
-  });
-}
-
-function goHome(){
-  switchTab('home');
-}
-
+function buildNav(){const ct=document.getElementById('navTabs');ct.innerHTML='';TABS.forEach(t=>{const b=document.createElement('button');b.className='ntab'+(t.id==='home'?' on':'');b.textContent=t.label;b.onclick=()=>switchTab(t.id);ct.appendChild(b);});}
+function switchTab(id){activeTab=id;document.querySelectorAll('.ntab').forEach((b,i)=>b.classList.toggle('on',TABS[i].id===id));showView(id==='home'?'homeView':id==='search'?'searchView':id==='top'?'topView':'homeView');if(id==='search')document.getElementById('searchBigInput').focus();if(id==='top'&&!document.getElementById('topAllGrid').innerHTML)loadTopAll();window.scrollTo(0,0);}
+function showView(id){['homeView','searchView','topView','detailView','watchView'].forEach(v=>{const el=document.getElementById(v);if(el)el.className='view'+(v===id?' on':'');});}
+function goHome(){switchTab('home');}
 document.getElementById('logoBtn').onclick=()=>{goHome();};
-
-document.getElementById('navSearchInput').addEventListener('keydown',e=>{
-  if(e.key==='Enter'&&e.target.value.trim()){
-    switchTab('search');
-    document.getElementById('searchBigInput').value=e.target.value.trim();
-    doSearch(e.target.value.trim());
-  }
-});
-
-document.getElementById('searchBigInput').addEventListener('input',e=>{
-  clearTimeout(searchDebounce);
-  const v=e.target.value.trim();
-  if(v.length>=2)searchDebounce=setTimeout(()=>doSearch(v),500);
-  else if(!v){document.getElementById('searchGrid').innerHTML='';document.getElementById('searchLabel').textContent='Start typing to search...';}
-});
-
-document.getElementById('searchBigInput').addEventListener('keydown',e=>{
-  if(e.key==='Enter'){clearTimeout(searchDebounce);doSearch(e.target.value.trim());}
-});
-
-document.querySelectorAll('.filter-btn').forEach(b=>{
-  b.onclick=()=>{
-    document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('on'));
-    b.classList.add('on');
-    filterType=b.dataset.type;
-    const v=document.getElementById('searchBigInput').value.trim();
-    if(v.length>=2)doSearch(v);
-  };
-});
-
-async function doSearch(q){
-  if(!q)return;
-  document.getElementById('searchLabel').textContent=`Results for "${q}"`;
-  document.getElementById('searchGrid').innerHTML='<div style="grid-column:1/-1;display:flex;align-items:center;justify-content:center;padding:60px"><div class="spinner"></div></div>';
-  try{
-    const vars={q};
-    if(filterType)vars.format=filterType;
-    const d=await anilistQuery(SEARCH_QUERY,vars);
-    const list=(d?.Page?.media)||[];
-    if(!list.length){
-      document.getElementById('searchGrid').innerHTML='<div class="error-box" style="grid-column:1/-1"><div class="error-icon">🔍</div><h3>No results</h3><p>Try a different search term</p></div>';
-    }else{
-      document.getElementById('searchGrid').innerHTML=list.map(a=>animeCard(a)).join('');
-    }
-  }catch(e){
-    document.getElementById('searchGrid').innerHTML='<div class="error-box" style="grid-column:1/-1"><div class="error-icon">⚠️</div><h3>Search failed</h3><p>Check your connection</p></div>';
-  }
-}
-
-async function loadTopAll(){
-  document.getElementById('topAllGrid').innerHTML='<div style="grid-column:1/-1;display:flex;align-items:center;justify-content:center;padding:80px"><div class="spinner"></div></div>';
-  try{
-    const d=await anilistQuery(TOP_QUERY,{page:1});
-    document.getElementById('topAllGrid').innerHTML=(d?.Page?.media||[]).map(a=>animeCard(a)).join('');
-  }catch(e){
-    document.getElementById('topAllGrid').innerHTML='<div class="error-box" style="grid-column:1/-1"><div class="error-icon">⚠️</div><h3>Failed to load</h3><p>Try refreshing</p></div>';
-  }
-}
-
-async function openDetail(id){
-  showView('detailView');
-  window.scrollTo(0,0);
-  currentAnime=null;
-  currentEpisodes=[];
-  document.getElementById('detailTitle').textContent='Loading...';
-  document.getElementById('detailBg').src='';
-  document.getElementById('detailThumb').src='';
-  document.getElementById('detailTags').innerHTML='';
-  document.getElementById('detailStats').innerHTML='';
-  document.getElementById('detailGenres').innerHTML='';
-  document.getElementById('detailSynopsis').textContent='';
-  document.getElementById('detailEpisodes').innerHTML='<div class="spinner" style="margin:20px auto"></div>';
-  document.getElementById('detailSidebar').innerHTML='';
-  try{
-    const d=await anilistQuery(DETAIL_QUERY,{id});
-    const a=d?.Media;
-    if(!a)throw new Error('Not found');
-    currentAnime=a;
-    const bg=a.bannerImage||a.coverImage?.extraLarge||'';
-    const thumb=a.coverImage?.large||a.coverImage?.extraLarge||'';
-    document.getElementById('detailBg').src=bg;
-    document.getElementById('detailThumb').src=thumb;
-    document.getElementById('detailTitle').textContent=a.title?.english||a.title?.romaji||'';
-    document.getElementById('detailTags').innerHTML=[
-      a.format&&`<div class="detail-tag">${a.format}</div>`,
-      a.status&&`<div class="detail-tag">${a.status.replace('_',' ')}</div>`,
-      a.seasonYear&&`<div class="detail-tag">${a.season||''} ${a.seasonYear}</div>`,
-    ].filter(Boolean).join('');
-    const score=a.score?'★ '+(a.score/10).toFixed(1):'—';
-    document.getElementById('detailStats').innerHTML=[
-      {v:score,l:'Score'},
-      {v:a.episodes||'?',l:'Episodes'},
-      {v:fmt(a.popularity),l:'Popularity'},
-      {v:a.nextAiringEpisode?'Ep '+a.nextAiringEpisode.episode:a.status==='FINISHED'?'Finished':'?',l:a.status==='RELEASING'?'Next Ep':'Status'},
-    ].map(s=>`<div class="stat-box"><div class="stat-val">${s.v}</div><div class="stat-label">${s.l}</div></div>`).join('');
-    document.getElementById('detailGenres').innerHTML=(a.genres||[]).map(g=>`<span class="gpill">${esc(g)}</span>`).join('');
-    document.getElementById('detailSynopsis').textContent=stripHtml(a.description)||'No description available.';
-    renderDetailSidebar(a);
-    await loadEpisodes(a);
-  }catch(e){
-    document.getElementById('detailEpisodes').innerHTML='<div class="error-box"><div class="error-icon">⚠️</div><h3>Failed to load</h3><p>'+e.message+'</p></div>';
-  }
-}
-
-function renderDetailSidebar(a){
-  const sd=document.getElementById('detailSidebar');
-  const start=a.startDate?.year?`${a.startDate.year}/${a.startDate.month||'?'}/${a.startDate.day||'?'}`:'Unknown';
-  const studio=a.studios?.nodes?.[0]?.name||'Unknown';
-  sd.innerHTML=`
-    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:18px">
-      <div style="font-family:'Bebas Neue',cursive;font-size:16px;letter-spacing:1.5px;margin-bottom:14px;color:var(--muted)">Details</div>
-      ${row('Studio',studio)}
-      ${row('Start Date',start)}
-      ${row('Format',a.format||'?')}
-      ${row('Episodes',a.episodes||'?')}
-      ${row('Status',a.status?.replace('_',' ')||'?')}
-      ${row('Season',(a.season||'?')+' '+(a.seasonYear||''))}
-    </div>
-  `;
-}
+document.getElementById('navSearchInput').addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.value.trim()){switchTab('search');document.getElementById('searchBigInput').value=e.target.value.trim();doSearch(e.target.value.trim());}});
+document.getElementById('searchBigInput').addEventListener('input',e=>{clearTimeout(searchDebounce);const v=e.target.value.trim();if(v.length>=2)searchDebounce=setTimeout(()=>doSearch(v),500);else if(!v){document.getElementById('searchGrid').innerHTML='';document.getElementById('searchLabel').textContent='Start typing to search...';}});
+document.getElementById('searchBigInput').addEventListener('keydown',e=>{if(e.key==='Enter'){clearTimeout(searchDebounce);doSearch(e.target.value.trim());}});
+document.querySelectorAll('.filter-btn').forEach(b=>{b.onclick=()=>{document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('on'));b.classList.add('on');filterType=b.dataset.type;const v=document.getElementById('searchBigInput').value.trim();if(v.length>=2)doSearch(v);};});
+async function doSearch(q){if(!q)return;document.getElementById('searchLabel').textContent=`Results for "${q}"`;document.getElementById('searchGrid').innerHTML='<div style="grid-column:1/-1;display:flex;align-items:center;justify-content:center;padding:60px"><div class="spinner"></div></div>';try{const vars={q};if(filterType)vars.format=filterType;const d=await anilistQuery(SEARCH_QUERY,vars);const list=(d?.Page?.media)||[];if(!list.length){document.getElementById('searchGrid').innerHTML='<div class="error-box" style="grid-column:1/-1"><div class="error-icon">🔍</div><h3>No results</h3><p>Try a different search term</p></div>';}else{document.getElementById('searchGrid').innerHTML=list.map(a=>animeCard(a)).join('');}}catch(e){document.getElementById('searchGrid').innerHTML='<div class="error-box" style="grid-column:1/-1"><div class="error-icon">⚠️</div><h3>Search failed</h3><p>Check your connection</p></div>';}}
+async function loadTopAll(){document.getElementById('topAllGrid').innerHTML='<div style="grid-column:1/-1;display:flex;align-items:center;justify-content:center;padding:80px"><div class="spinner"></div></div>';try{const d=await anilistQuery(TOP_QUERY,{page:1});document.getElementById('topAllGrid').innerHTML=(d?.Page?.media||[]).map(a=>animeCard(a)).join('');}catch(e){document.getElementById('topAllGrid').innerHTML='<div class="error-box" style="grid-column:1/-1"><div class="error-icon">⚠️</div><h3>Failed to load</h3><p>Try refreshing</p></div>';}}
+async function openDetail(id){showView('detailView');window.scrollTo(0,0);currentAnime=null;currentEpisodes=[];document.getElementById('detailTitle').textContent='Loading...';document.getElementById('detailBg').src='';document.getElementById('detailThumb').src='';document.getElementById('detailTags').innerHTML='';document.getElementById('detailStats').innerHTML='';document.getElementById('detailGenres').innerHTML='';document.getElementById('detailSynopsis').textContent='';document.getElementById('detailEpisodes').innerHTML='<div class="spinner" style="margin:20px auto"></div>';document.getElementById('detailSidebar').innerHTML='';try{const d=await anilistQuery(DETAIL_QUERY,{id});const a=d?.Media;if(!a)throw new Error('Not found');currentAnime=a;const bg=a.bannerImage||a.coverImage?.extraLarge||'';const thumb=a.coverImage?.large||a.coverImage?.extraLarge||'';document.getElementById('detailBg').src=bg;document.getElementById('detailThumb').src=thumb;document.getElementById('detailTitle').textContent=a.title?.english||a.title?.romaji||'';document.getElementById('detailTags').innerHTML=[a.format&&`<div class="detail-tag">${a.format}</div>`,a.status&&`<div class="detail-tag">${a.status.replace('_',' ')}</div>`,a.seasonYear&&`<div class="detail-tag">${a.season||''} ${a.seasonYear}</div>`,].filter(Boolean).join('');const score=a.score?'★ '+(a.score/10).toFixed(1):'—';document.getElementById('detailStats').innerHTML=[{v:score,l:'Score'},{v:a.episodes||'?',l:'Episodes'},{v:fmt(a.popularity),l:'Popularity'},{v:a.nextAiringEpisode?'Ep '+a.nextAiringEpisode.episode:a.status==='FINISHED'?'Finished':'?',l:a.status==='RELEASING'?'Next Ep':'Status'},].map(s=>`<div class="stat-box"><div class="stat-val">${s.v}</div><div class="stat-label">${s.l}</div></div>`).join('');document.getElementById('detailGenres').innerHTML=(a.genres||[]).map(g=>`<span class="gpill">${esc(g)}</span>`).join('');document.getElementById('detailSynopsis').textContent=stripHtml(a.description)||'No description available.';renderDetailSidebar(a);await loadEpisodes(a);}catch(e){document.getElementById('detailEpisodes').innerHTML='<div class="error-box"><div class="error-icon">⚠️</div><h3>Failed to load</h3><p>'+e.message+'</p></div>';}}
+function renderDetailSidebar(a){const sd=document.getElementById('detailSidebar');const start=a.startDate?.year?`${a.startDate.year}/${a.startDate.month||'?'}/${a.startDate.day||'?'}`:'Unknown';const studio=a.studios?.nodes?.[0]?.name||'Unknown';sd.innerHTML=`<div style="background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:18px"><div style="font-family:'Bebas Neue',cursive;font-size:16px;letter-spacing:1.5px;margin-bottom:14px;color:var(--muted)">Details</div>${row('Studio',studio)}${row('Start Date',start)}${row('Format',a.format||'?')}${row('Episodes',a.episodes||'?')}${row('Status',a.status?.replace('_',' ')||'?')}${row('Season',(a.season||'?')+' '+(a.seasonYear||''))}</div>`;}
 function row(l,v){return `<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);font-size:13px"><span style="color:var(--muted)">${l}</span><span style="font-weight:600;text-align:right;max-width:160px">${esc(String(v))}</span></div>`;}
-
-async function loadEpisodes(a){
-  const title=a.title?.english||a.title?.romaji||'';
-  document.getElementById('detailEpisodes').innerHTML='<div class="ep-section-title">Episodes</div><div style="color:var(--muted);font-size:13px;padding:8px 0">Searching streams...</div>';
-  const result=await consumetSearch(title);
-  if(!result||!result.results?.length){
-    const altTitle=a.title?.romaji||a.title?.english||'';
-    const alt=altTitle!==title?await consumetSearch(altTitle):null;
-    if(!alt||!alt.results?.length){
-      renderNoEpisodes(a);
-      return;
-    }
-    renderEpisodeSourcePicker(a,alt.results);
-    return;
-  }
-  if(result.results.length===1){
-    await fetchAndRenderEpisodes(a,result.results[0].id,result.results[0].title||title);
-    return;
-  }
-  renderEpisodeSourcePicker(a,result.results);
-}
-
-function renderNoEpisodes(a){
-  document.getElementById('detailEpisodes').innerHTML=`
-    <div class="ep-section-title">Episodes</div>
-    <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:16px;margin-top:8px">
-      <div style="font-size:13px;color:var(--muted);margin-bottom:12px">Stream source not found automatically. Try searching manually:</div>
-      <button class="btn-r" style="padding:10px 20px;font-size:13px" onclick="window.open('https://anikai.to/search?q=${encodeURIComponent(a.title?.english||a.title?.romaji||'')}','_blank')">▶ Watch on AnimeKai</button>
-    </div>
-  `;
-}
-
-function renderEpisodeSourcePicker(a,sources){
-  const list=sources.slice(0,8).map(s=>`<button class="source-btn" onclick="fetchAndRenderEpisodes(window._ca,'${esc(s.id)}','${esc(s.title||s.id)}')">${esc(s.title||s.id)}</button>`).join('');
-  document.getElementById('detailEpisodes').innerHTML=`
-    <div class="ep-section-title">Episodes</div>
-    <div class="source-picker">
-      <h4>Multiple matches found — select the correct one:</h4>
-      ${list}
-    </div>
-  `;
-  window._ca=a;
-}
-
-async function fetchAndRenderEpisodes(a,gogoId,sourceTitle){
-  window._ca=a;
-  document.getElementById('detailEpisodes').innerHTML='<div class="ep-section-title">Episodes</div><div style="color:var(--muted);font-size:13px;padding:8px 0">Loading episodes...</div>';
-  const info=await consumetInfo(gogoId);
-  if(!info||!info.episodes?.length){
-    renderNoEpisodes(a);
-    return;
-  }
-  currentEpisodes=info.episodes;
-  const total=currentEpisodes.length;
-  const btn=`<div class="ep-section-title">Episodes <span style="font-size:14px;color:var(--muted);font-weight:400">(${total})</span></div>
-    <div style="font-size:11px;color:var(--muted);margin-bottom:10px">Source: ${esc(sourceTitle)}</div>
-    <div class="ep-grid">${currentEpisodes.map((ep,i)=>`<button class="ep-btn" onclick="startWatch(${i})" title="Episode ${ep.number||i+1}">Ep ${ep.number||i+1}</button>`).join('')}</div>`;
-  document.getElementById('detailEpisodes').innerHTML=btn;
-}
-
-async function startWatch(epIdx){
-  if(!currentEpisodes.length)return;
-  currentEpIdx=epIdx;
-  const ep=currentEpisodes[epIdx];
-  const title=currentAnime?.title?.english||currentAnime?.title?.romaji||'';
-  showView('watchView');
-  window.scrollTo(0,0);
-  document.getElementById('watchTitle').textContent=title;
-  document.getElementById('watchEpLabel').textContent=`Episode ${ep.number||epIdx+1}${ep.title?' — '+ep.title:''}`;
-  document.getElementById('watchBreadcrumb').textContent=title+' › Episode '+(ep.number||epIdx+1);
-  document.getElementById('watchBackBtn').onclick=()=>{showView('detailView');window.scrollTo(0,0);};
-  document.getElementById('sourcePickerArea').innerHTML='';
-  buildEpSideList();
-  await loadStream(ep.id);
-}
-
-function buildEpSideList(){
-  document.getElementById('epSideCount').textContent=currentEpisodes.length+' eps';
-  document.getElementById('epSideScroll').innerHTML=currentEpisodes.map((ep,i)=>`
-    <div class="ep-row${i===currentEpIdx?' current':''}" id="eprow${i}" onclick="switchEp(${i})">
-      <div class="ep-row-num">${ep.number||i+1}</div>
-      <div class="ep-row-title">${esc(ep.title||'Episode '+(ep.number||i+1))}</div>
-    </div>
-  `).join('');
-  const cur=document.getElementById('eprow'+currentEpIdx);
-  if(cur)cur.scrollIntoView({block:'center',behavior:'smooth'});
-}
-
-async function switchEp(i){
-  currentEpIdx=i;
-  const ep=currentEpisodes[i];
-  const title=currentAnime?.title?.english||currentAnime?.title?.romaji||'';
-  document.getElementById('watchEpLabel').textContent=`Episode ${ep.number||i+1}${ep.title?' — '+ep.title:''}`;
-  document.getElementById('watchBreadcrumb').textContent=title+' › Episode '+(ep.number||i+1);
-  document.getElementById('sourcePickerArea').innerHTML='';
-  document.querySelectorAll('.ep-row').forEach((r,ri)=>r.classList.toggle('current',ri===i));
-  const cur=document.getElementById('eprow'+i);
-  if(cur)cur.scrollIntoView({block:'nearest',behavior:'smooth'});
-  await loadStream(ep.id);
-}
-
-async function loadStream(epId){
-  const overlay=document.getElementById('playerOverlay');
-  const msg=document.getElementById('playerMsg');
-  overlay.classList.remove('hidden');
-  msg.textContent='Finding stream...';
-  if(hlsInstance){hlsInstance.destroy();hlsInstance=null;}
-  const video=document.getElementById('videoPlayer');
-  video.pause();
-  video.removeAttribute('src');
-  try{
-    const data=await consumetWatch(epId);
-    if(!data||!data.sources?.length)throw new Error('No sources found');
-    const sources=data.sources;
-    const m3u8=sources.find(s=>s.url?.includes('.m3u8'))||sources[0];
-    if(!m3u8)throw new Error('No playable source');
-    playSource(m3u8.url,sources,data.headers);
-  }catch(e){
-    overlay.classList.remove('hidden');
-    msg.textContent='Stream unavailable for this episode';
-    document.getElementById('sourcePickerArea').innerHTML=`
-      <div style="margin-top:12px;padding:14px;background:var(--bg3);border:1px solid var(--border);border-radius:8px">
-        <div style="font-size:12px;color:var(--muted);margin-bottom:10px">Could not load stream automatically</div>
-        <button class="btn-r" style="padding:8px 18px;font-size:12px" onclick="window.open('https://anikai.to','_blank')">▶ Try AnimeKai</button>
-      </div>
-    `;
-  }
-}
-
-function playSource(url,allSources,headers){
-  const video=document.getElementById('videoPlayer');
-  const overlay=document.getElementById('playerOverlay');
-  if(Hls.isSupported()&&url.includes('.m3u8')){
-    hlsInstance=new Hls({
-      maxBufferLength:30,
-      maxMaxBufferLength:60,
-      xhrSetup:(xhr)=>{if(headers?.Referer)xhr.setRequestHeader('Referer',headers.Referer);}
-    });
-    hlsInstance.loadSource(url);
-    hlsInstance.attachMedia(video);
-    hlsInstance.on(Hls.Events.MANIFEST_PARSED,()=>{
-      overlay.classList.add('hidden');
-      video.play().catch(()=>{});
-    });
-    hlsInstance.on(Hls.Events.ERROR,(ev,data)=>{
-      if(data.fatal){
-        overlay.classList.remove('hidden');
-        document.getElementById('playerMsg').textContent='Playback error — try another quality';
-        renderSourcePicker(allSources);
-      }
-    });
-  }else if(video.canPlayType('application/vnd.apple.mpegurl')&&url.includes('.m3u8')){
-    video.src=url;
-    video.addEventListener('loadedmetadata',()=>{overlay.classList.add('hidden');video.play().catch(()=>{});},{once:true});
-  }else{
-    video.src=url;
-    video.addEventListener('canplay',()=>{overlay.classList.add('hidden');video.play().catch(()=>{});},{once:true});
-  }
-  renderSourcePicker(allSources);
-}
-
-function renderSourcePicker(sources){
-  if(!sources||sources.length<=1)return;
-  const sp=document.getElementById('sourcePickerArea');
-  sp.innerHTML=`<div style="margin-top:12px"><div style="font-size:11px;color:var(--muted);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px">Quality</div><div style="display:flex;gap:6px;flex-wrap:wrap">${sources.map((s,i)=>`<button onclick="switchSource('${esc(s.url)}')" style="padding:5px 12px;background:var(--bg3);border:1px solid var(--border);border-radius:5px;color:var(--text);font-family:'Rajdhani',sans-serif;font-size:12px;font-weight:700;cursor:pointer;transition:.2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">${esc(s.quality||('Source '+(i+1)))}</button>`).join('')}</div></div>`;
-}
-
-function switchSource(url){
-  const video=document.getElementById('videoPlayer');
-  const overlay=document.getElementById('playerOverlay');
-  overlay.classList.remove('hidden');
-  document.getElementById('playerMsg').textContent='Switching quality...';
-  if(hlsInstance){hlsInstance.destroy();hlsInstance=null;}
-  if(Hls.isSupported()&&url.includes('.m3u8')){
-    hlsInstance=new Hls();
-    hlsInstance.loadSource(url);
-    hlsInstance.attachMedia(video);
-    hlsInstance.on(Hls.Events.MANIFEST_PARSED,()=>{overlay.classList.add('hidden');video.play().catch(()=>{});});
-  }else{
-    video.src=url;
-    video.addEventListener('canplay',()=>{overlay.classList.add('hidden');video.play().catch(()=>{});},{once:true});
-  }
-}
-
-async function loadHome(){
-  try{
-    const d=await anilistQuery(TREND_QUERY,{page:1});
-    const list=d?.Page?.media||[];
-    setHero(list);
-    document.getElementById('trendingGrid').innerHTML=list.slice(0,10).map(a=>animeCard(a)).join('');
-    lastUpdated=new Date();
-    updateBadge();
-  }catch(e){document.getElementById('trendingGrid').innerHTML='<div class="error-box" style="grid-column:1/-1"><div class="error-icon">⚠️</div><h3>Failed to load</h3><p>Check your connection and refresh</p></div>';}
-
-  try{
-    await sleep(350);
-    const {season,year}=getSeason();
-    const d=await anilistQuery(SEASON_QUERY,{season,year});
-    document.getElementById('seasonGrid').innerHTML=(d?.Page?.media||[]).slice(0,10).map(a=>animeCard(a)).join('');
-  }catch(e){}
-
-  try{
-    await sleep(350);
-    const d=await anilistQuery(POP_QUERY,{page:1});
-    document.getElementById('popularGrid').innerHTML=(d?.Page?.media||[]).slice(0,10).map(a=>animeCard(a)).join('');
-  }catch(e){}
-
-  try{
-    await sleep(350);
-    const d=await anilistQuery(TOP_QUERY,{page:1});
-    document.getElementById('topRatedList').innerHTML=(d?.Page?.media||[]).slice(0,10).map((a,i)=>rankItem(a,i)).join('');
-  }catch(e){}
-
-  loadSchedule();
-}
-
-async function loadSchedule(){
-  try{
-    const days=['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
-    const today=days[new Date().getDay()];
-    const d=await jikanGet(`/schedules/${today}?limit=20`);
-    const items=d?.data||[];
-    document.getElementById('schedList').innerHTML=items.length?items.map(a=>{
-      const airTime=a.broadcast?.time||'??:??';
-      const ep=a.episodes||'?';
-      return `<div class="sched-item" onclick="openDetail(${a.mal_id})">
-        <div class="sched-time">${airTime}</div>
-        <div>
-          <div class="sched-name">${esc(a.title)}</div>
-          <div class="sched-ep">${ep} eps</div>
-        </div>
-      </div>`;
-    }).join(''):'<div style="padding:12px;font-size:13px;color:var(--muted)">No schedule data</div>';
-  }catch(e){
-    document.getElementById('schedList').innerHTML='<div style="padding:12px;font-size:13px;color:var(--muted)">Schedule unavailable</div>';
-  }
-}
-
-function updateBadge(){
-  if(!lastUpdated)return;
-  const el=document.getElementById('updatedBadge');
-  const diff=Math.floor((Date.now()-lastUpdated)/60000);
-  el.textContent=diff<1?'Updated just now':`Updated ${diff}m ago`;
-}
-
-async function autoRefresh(){
-  await loadHome();
-}
-
-function init(){
-  buildNav();
-  loadHome();
-  setInterval(autoRefresh,REFRESH_MS);
-  setInterval(updateBadge,60000);
-}
-
+async function loadEpisodes(a){const title=a.title?.english||a.title?.romaji||'';document.getElementById('detailEpisodes').innerHTML='<div class="ep-section-title">Episodes</div><div style="color:var(--muted);font-size:13px;padding:8px 0">Searching streams...</div>';const result=await consumetSearch(title);if(!result||!result.results?.length){const altTitle=a.title?.romaji||a.title?.english||'';const alt=altTitle!==title?await consumetSearch(altTitle):null;if(!alt||!alt.results?.length){renderNoEpisodes(a);return;}renderEpisodeSourcePicker(a,alt.results);return;}if(result.results.length===1){await fetchAndRenderEpisodes(a,result.results[0].id,result.results[0].title||title);return;}renderEpisodeSourcePicker(a,result.results);}
+function renderNoEpisodes(a){document.getElementById('detailEpisodes').innerHTML=`<div class="ep-section-title">Episodes</div><div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:16px;margin-top:8px"><div style="font-size:13px;color:var(--muted);margin-bottom:12px">Stream source not found automatically. Try searching manually:</div><button class="btn-r" style="padding:10px 20px;font-size:13px" onclick="window.open('https://anikai.to/search?q=${encodeURIComponent(a.title?.english||a.title?.romaji||'')}','_blank')">▶ Watch on AnimeKai</button></div>`;}
+function renderEpisodeSourcePicker(a,sources){const list=sources.slice(0,8).map(s=>`<button class="source-btn" onclick="fetchAndRenderEpisodes(window._ca,'${esc(s.id)}','${esc(s.title||s.id)}')">${esc(s.title||s.id)}</button>`).join('');document.getElementById('detailEpisodes').innerHTML=`<div class="ep-section-title">Episodes</div><div class="source-picker"><h4>Multiple matches found — select the correct one:</h4>${list}</div>`;window._ca=a;}
+async function fetchAndRenderEpisodes(a,gogoId,sourceTitle){window._ca=a;document.getElementById('detailEpisodes').innerHTML='<div class="ep-section-title">Episodes</div><div style="color:var(--muted);font-size:13px;padding:8px 0">Loading episodes...</div>';const info=await consumetInfo(gogoId);if(!info||!info.episodes?.length){renderNoEpisodes(a);return;}currentEpisodes=info.episodes;const total=currentEpisodes.length;const btn=`<div class="ep-section-title">Episodes <span style="font-size:14px;color:var(--muted);font-weight:400">(${total})</span></div><div style="font-size:11px;color:var(--muted);margin-bottom:10px">Source: ${esc(sourceTitle)}</div><div class="ep-grid">${currentEpisodes.map((ep,i)=>`<button class="ep-btn" onclick="startWatch(${i})" title="Episode ${ep.number||i+1}">Ep ${ep.number||i+1}</button>`).join('')}</div>`;document.getElementById('detailEpisodes').innerHTML=btn;}
+async function startWatch(epIdx){if(!currentEpisodes.length)return;currentEpIdx=epIdx;const ep=currentEpisodes[epIdx];const title=currentAnime?.title?.english||currentAnime?.title?.romaji||'';showView('watchView');window.scrollTo(0,0);document.getElementById('watchTitle').textContent=title;document.getElementById('watchEpLabel').textContent=`Episode ${ep.number||epIdx+1}${ep.title?' — '+ep.title:''}`;document.getElementById('watchBreadcrumb').textContent=title+' › Episode '+(ep.number||epIdx+1);document.getElementById('watchBackBtn').onclick=()=>{showView('detailView');window.scrollTo(0,0);};document.getElementById('sourcePickerArea').innerHTML='';buildEpSideList();await loadStream(ep.id);}
+function buildEpSideList(){document.getElementById('epSideCount').textContent=currentEpisodes.length+' eps';document.getElementById('epSideScroll').innerHTML=currentEpisodes.map((ep,i)=>`<div class="ep-row${i===currentEpIdx?' current':''}" id="eprow${i}" onclick="switchEp(${i})"><div class="ep-row-num">${ep.number||i+1}</div><div class="ep-row-title">${esc(ep.title||'Episode '+(ep.number||i+1))}</div></div>`).join('');const cur=document.getElementById('eprow'+currentEpIdx);if(cur)cur.scrollIntoView({block:'center',behavior:'smooth'});}
+async function switchEp(i){currentEpIdx=i;const ep=currentEpisodes[i];const title=currentAnime?.title?.english||currentAnime?.title?.romaji||'';document.getElementById('watchEpLabel').textContent=`Episode ${ep.number||i+1}${ep.title?' — '+ep.title:''}`;document.getElementById('watchBreadcrumb').textContent=title+' › Episode '+(ep.number||i+1);document.getElementById('sourcePickerArea').innerHTML='';document.querySelectorAll('.ep-row').forEach((r,ri)=>r.classList.toggle('current',ri===i));const cur=document.getElementById('eprow'+i);if(cur)cur.scrollIntoView({block:'nearest',behavior:'smooth'});await loadStream(ep.id);}
+async function loadStream(epId){const overlay=document.getElementById('playerOverlay');const msg=document.getElementById('playerMsg');overlay.classList.remove('hidden');msg.textContent='Finding stream...';if(hlsInstance){hlsInstance.destroy();hlsInstance=null;}const video=document.getElementById('videoPlayer');video.pause();video.removeAttribute('src');try{const data=await consumetWatch(epId);if(!data||!data.sources?.length)throw new Error('No sources found');const sources=data.sources;const m3u8=sources.find(s=>s.url?.includes('.m3u8'))||sources[0];if(!m3u8)throw new Error('No playable source');playSource(m3u8.url,sources,data.headers);}catch(e){overlay.classList.remove('hidden');msg.textContent='Stream unavailable for this episode';document.getElementById('sourcePickerArea').innerHTML=`<div style="margin-top:12px;padding:14px;background:var(--bg3);border:1px solid var(--border);border-radius:8px"><div style="font-size:12px;color:var(--muted);margin-bottom:10px">Could not load stream automatically</div><button class="btn-r" style="padding:8px 18px;font-size:12px" onclick="window.open('https://anikai.to','_blank')">▶ Try AnimeKai</button></div>`;}}
+function playSource(url,allSources,headers){const video=document.getElementById('videoPlayer');const overlay=document.getElementById('playerOverlay');if(Hls.isSupported()&&url.includes('.m3u8')){hlsInstance=new Hls({maxBufferLength:30,maxMaxBufferLength:60,xhrSetup:(xhr)=>{if(headers?.Referer)xhr.setRequestHeader('Referer',headers.Referer);}});hlsInstance.loadSource(url);hlsInstance.attachMedia(video);hlsInstance.on(Hls.Events.MANIFEST_PARSED,()=>{overlay.classList.add('hidden');video.play().catch(()=>{});});hlsInstance.on(Hls.Events.ERROR,(ev,data)=>{if(data.fatal){overlay.classList.remove('hidden');document.getElementById('playerMsg').textContent='Playback error — try another quality';renderSourcePicker(allSources);}});}else if(video.canPlayType('application/vnd.apple.mpegurl')&&url.includes('.m3u8')){video.src=url;video.addEventListener('loadedmetadata',()=>{overlay.classList.add('hidden');video.play().catch(()=>{});},{once:true});}else{video.src=url;video.addEventListener('canplay',()=>{overlay.classList.add('hidden');video.play().catch(()=>{});},{once:true});}renderSourcePicker(allSources);}
+function renderSourcePicker(sources){if(!sources||sources.length<=1)return;const sp=document.getElementById('sourcePickerArea');sp.innerHTML=`<div style="margin-top:12px"><div style="font-size:11px;color:var(--muted);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px">Quality</div><div style="display:flex;gap:6px;flex-wrap:wrap">${sources.map((s,i)=>`<button onclick="switchSource('${esc(s.url)}')" style="padding:5px 12px;background:var(--bg3);border:1px solid var(--border);border-radius:5px;color:var(--text);font-family:'Rajdhani',sans-serif;font-size:12px;font-weight:700;cursor:pointer;transition:.2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">${esc(s.quality||('Source '+(i+1)))}</button>`).join('')}</div></div>`;}
+function switchSource(url){const video=document.getElementById('videoPlayer');const overlay=document.getElementById('playerOverlay');overlay.classList.remove('hidden');document.getElementById('playerMsg').textContent='Switching quality...';if(hlsInstance){hlsInstance.destroy();hlsInstance=null;}if(Hls.isSupported()&&url.includes('.m3u8')){hlsInstance=new Hls();hlsInstance.loadSource(url);hlsInstance.attachMedia(video);hlsInstance.on(Hls.Events.MANIFEST_PARSED,()=>{overlay.classList.add('hidden');video.play().catch(()=>{});});}else{video.src=url;video.addEventListener('canplay',()=>{overlay.classList.add('hidden');video.play().catch(()=>{});},{once:true});}}
+async function loadHome(){try{const d=await anilistQuery(TREND_QUERY,{page:1});const list=d?.Page?.media||[];setHero(list);document.getElementById('trendingGrid').innerHTML=list.slice(0,10).map(a=>animeCard(a)).join('');lastUpdated=new Date();updateBadge();}catch(e){document.getElementById('trendingGrid').innerHTML='<div class="error-box" style="grid-column:1/-1"><div class="error-icon">⚠️</div><h3>Failed to load</h3><p>Check your connection and refresh</p></div>';}try{await sleep(350);const {season,year}=getSeason();const d=await anilistQuery(SEASON_QUERY,{season,year});document.getElementById('seasonGrid').innerHTML=(d?.Page?.media||[]).slice(0,10).map(a=>animeCard(a)).join('');}catch(e){}try{await sleep(350);const d=await anilistQuery(POP_QUERY,{page:1});document.getElementById('popularGrid').innerHTML=(d?.Page?.media||[]).slice(0,10).map(a=>animeCard(a)).join('');}catch(e){}try{await sleep(350);const d=await anilistQuery(TOP_QUERY,{page:1});document.getElementById('topRatedList').innerHTML=(d?.Page?.media||[]).slice(0,10).map((a,i)=>rankItem(a,i)).join('');}catch(e){}loadSchedule();}
+async function loadSchedule(){try{const days=['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];const today=days[new Date().getDay()];const d=await jikanGet(`/schedules/${today}?limit=20`);const items=d?.data||[];document.getElementById('schedList').innerHTML=items.length?items.map(a=>{const airTime=a.broadcast?.time||'??:??';const ep=a.episodes||'?';return `<div class="sched-item" onclick="openDetail(${a.mal_id})"><div class="sched-time">${airTime}</div><div><div class="sched-name">${esc(a.title)}</div><div class="sched-ep">${ep} eps</div></div></div>`;}).join(''):'<div style="padding:12px;font-size:13px;color:var(--muted)">No schedule data</div>';}catch(e){document.getElementById('schedList').innerHTML='<div style="padding:12px;font-size:13px;color:var(--muted)">Schedule unavailable</div>';}}
+function updateBadge(){if(!lastUpdated)return;const el=document.getElementById('updatedBadge');const diff=Math.floor((Date.now()-lastUpdated)/60000);el.textContent=diff<1?'Updated just now':`Updated ${diff}m ago`;}
+async function autoRefresh(){await loadHome();}
+function init(){buildNav();loadHome();setInterval(autoRefresh,REFRESH_MS);setInterval(updateBadge,60000);}
 init();
 </script>
 </body>
